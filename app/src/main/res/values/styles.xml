@@ -10,4 +10,34 @@
 
     <style name="AppNoTitle" parent="Theme.AppCompat.Light.NoActionBar"></style>
 
+    <style name="divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray_e5e5e5</item>
+    </style>
+
+    <style name="text_default_regular" parent="TextAppearance.AppCompat">
+        <item name="typeface">fonts/roboto_medium.ttf</item>
+    </style>
+
+    <style name="text_default_bold" parent="TextAppearance.AppCompat">
+        <item name="typeface">fonts/roboto_bold.ttf</item>
+    </style>
+
+    <style name="text_font_roboto" parent="TextAppearance.AppCompat">
+        <item name="typeface">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+    <style name="text_font_roboto_bold" parent="TextAppearance.AppCompat">
+        <item name="typeface">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="text_font_roboto_light" parent="TextAppearance.AppCompat">
+        <item name="typeface">fonts/Roboto-Light.ttf</item>
+    </style>
+
+    <style name="text_font_roboto_medium" parent="TextAppearance.AppCompat">
+        <item name="typeface">fonts/Roboto-Medium.ttf</item>
+    </style>
+
 </resources>

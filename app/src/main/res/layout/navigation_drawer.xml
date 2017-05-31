@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:clickable="true"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_menu_header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue_174F78"
+        android:paddingLeft="@dimen/default_margin_20_dp"
+        android:paddingTop="@dimen/default_margin_20_dp">
+
+        <ImageView
+            android:id="@+id/image_menu_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:src="@drawable/barbershop" />
+
+        <ImageView
+            android:id="@+id/image_menu_uniclass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="26dp"
+            android:src="@drawable/barbershop"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_menu_logo"
+            android:layout_marginBottom="@dimen/default_margin_20_dp"
+            android:layout_marginTop="17dp">
+
+            <ImageView
+                android:id="@+id/image_menu_avatar"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:contentDescription="@null"
+                android:src="@drawable/barbershop"/>
+
+            <br.com.newmallapp3.newmall.dev.view.custom.TypefacedTextView
+                android:id="@+id/text_menu_name"
+                style="@style/text_default_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/default_margin_20_dp"
+                android:layout_toRightOf="@+id/image_menu_avatar"
+                android:textColor="@color/white_ffffff"
+                android:textSize="@dimen/default_text_14_sp"
+                tools:text="Olá, Antonio"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/text_menu_name"
+                android:layout_below="@+id/text_menu_name"
+                android:orientation="horizontal">
+
+                <br.com.newmallapp3.newmall.dev.view.custom.TypefacedTextView
+                    android:id="@+id/text_menu_agency_label"
+                    style="@style/text_default_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="aqui"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="@dimen/default_text_12_sp"/>
+
+                <br.com.newmallapp3.newmall.dev.view.custom.TypefacedTextView
+                    android:id="@+id/text_menu_agency"
+                    style="@style/text_default_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_5_dp"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="@dimen/default_text_12_sp"
+                    tools:text="8888"/>
+
+                <br.com.newmallapp3.newmall.dev.view.custom.TypefacedTextView
+                    android:id="@+id/text_menu_account_label"
+                    style="@style/text_default_regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_5_dp"
+                    tools:text="aqui"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="@dimen/default_text_12_sp"/>
+
+                <br.com.newmallapp3.newmall.dev.view.custom.TypefacedTextView
+                    android:id="@+id/text_menu_account"
+                    style="@style/text_default_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/default_margin_5_dp"
+                    android:textColor="@color/white_ffffff"
+                    android:textSize="@dimen/default_text_12_sp"
+                    tools:text="88888-6"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_menu_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_menu_header_container"
+        android:background="@color/white"
+        android:overScrollMode="never"/>
+
+</RelativeLayout>
